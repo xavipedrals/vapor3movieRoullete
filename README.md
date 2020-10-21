@@ -18,3 +18,6 @@
         <img src="http://img.shields.io/badge/swift-5.1-brightgreen.svg" alt="Swift 5.1">
     </a>
 </p>
+
+# TO RUN THE PROJECT
+swift run Run --hostname=0.0.0.0 --port=8080
