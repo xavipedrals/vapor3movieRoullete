@@ -8,6 +8,7 @@
 import Foundation
 import TelegramBotSDK
 import Vapor
+import Jobs
 
 class TelegramController {
     
@@ -20,7 +21,20 @@ class TelegramController {
     }
     
     func sayHello() {
-        bot.sendMessageSync(chatId: myChat, text: "Hello master")
+        bot.sendMessageSync(chatId: myChat, text: "Hello master it's \(Date())")
+    }
+    
+    func setupTimer() {
+        Jobs.add(interval: .seconds(20)) {
+            print("👋 I'm printed every 20 seconds!")
+            self.sayHello()
+        }
+    }
+    
+    @objc func sida() {
+        print("Sida called")
+        sayHello()
+        setupTimer()
     }
     
 }

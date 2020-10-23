@@ -3,6 +3,7 @@ import Vapor
 /// Register your application's routes here.
 public func routes(_ router: Router) throws {
     let telegramController = TelegramController()
+    telegramController.setupTimer()
     // Basic "It works" example
     router.get { req in
         return "It works!"
