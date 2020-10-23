@@ -119,6 +119,15 @@
         }
       },
       {
+        "package": "swift-log",
+        "repositoryURL": "https://github.com/givip/swift-log.git",
+        "state": {
+          "branch": null,
+          "revision": "fef7af3b3ae0985f8be9b11c33ad0d1939726545",
+          "version": "1.1.0-Logging-swift"
+        }
+      },
+      {
         "package": "swift-nio",
         "repositoryURL": "https://github.com/apple/swift-nio.git",
         "state": {
@@ -161,6 +170,15 @@
           "branch": null,
           "revision": "8dcac1bcdac12c634843b8a73e1f3ef17260ee56",
           "version": "2.1.0"
+        }
+      },
+      {
+        "package": "Telegrammer",
+        "repositoryURL": "https://github.com/givip/Telegrammer.git",
+        "state": {
+          "branch": null,
+          "revision": "79c8199ae99ea2cb451e8a378f13efabb91a5a13",
+          "version": "0.5.4"
         }
       },
       {
